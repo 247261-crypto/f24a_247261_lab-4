@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Canteen - Sheet</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><h1>Canteen</h1></header>
+<main>
+  <p><a href="till.html">Go to the till</a> | <a href="people.html">Who is in</a></p>
+
+  <!-- Task 1: the sheet -->
+  <table id="sheet">
+    <thead>
+      <tr><th>Item</th><th>Quantity</th><th>Price</th><th>Line</th><th>Note</th></tr>
+    </thead>
+    <tbody id="rows"></tbody>
+  </table>
+
+  <!-- Task 2: the form -->
+  <div>
+    <input id="item" placeholder="Item">
+    <input id="quantity" placeholder="Quantity">
+    <input id="price" placeholder="Price">
+    <button id="add">Add</button>
+  </div>
+
+  <!-- Task 5: the total -->
+  <div id="report">
+    <p id="total"></p>
+    <p id="totalKind"></p>
+    <p id="noteKind"></p>
+    <p id="match"></p>
+    <p id="sameKind"></p>
+    <p id="lineKind"></p>
+  </div>
+</main>
+<footer>Roll: 247261</footer>
+<script src="sheet.js"></script>
+</body>
+</html>
